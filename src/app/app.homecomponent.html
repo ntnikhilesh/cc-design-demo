@@ -47,17 +47,30 @@ html {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .footer {
-    background-color: #0099cc;
+    background-color: #120D78;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     padding: 15px;
 }
 .dashboard-card {
-   width: 300px;
+   width: 200px;
    display: inline-block;
    margin-right: 15px;
    margin-top: 15px;
+   text-align: center;
+}
+.btn-group .button {
+    background-color: black; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
 }
 
 /* For desktop: */
@@ -114,44 +127,144 @@ html {
   </ul>
 </div> -->
 
-<!--Tab -->
+<!--Tab  
 <div class="col-6">
      <button md-button (click)="start.close()">Tab1</button>
 
-</div>
+</div> -->
 
 <!-- Item in md-cards -->
 
 <div class="col-6">
   
 <md-card class="dashboard-card">
-  <h4>Rice</h4>
+<md-card-title>Rice </md-card-title>
+<md-card-subtitle>Price : 80 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://images.stockunlimited.net/preview1300/sack-of-rice-icon_1317613.jpg" alt="Rice">
+  
 </md-card>
 <md-card class="dashboard-card">
-  <h4>Pulse</h4>
+<md-card-title>Floor </md-card-title>
+<md-card-subtitle>Price : 20 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://previews.123rf.com/images/dxinerz/dxinerz1601/dxinerz160101989/51010315-Flour-white-wheat-icon-vector-image-Can-also-be-used-for-food-iconset-Suitable-for-use-on-web-apps-m-Stock-Vector.jpg" alt="Rice">
+  
 </md-card>
 <md-card class="dashboard-card">
-  <h4>Wheat</h4>
+<md-card-title>Bread </md-card-title>
+<md-card-subtitle>Price : 40 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://image.shutterstock.com/z/stock-vector-toast-icon-sliced-bread-sign-bakery-symbol-round-orange-web-button-with-shadow-358468829.jpg" alt="Bread">
+  
 </md-card>
 <md-card class="dashboard-card">
-  <h4>Barley</h4>
+<md-card-title>Apple </md-card-title>
+<md-card-subtitle>Price : 200 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://image.shutterstock.com/z/stock-vector-apple-icon-apple-icon-art-apple-icon-web-apple-icon-new-apple-icon-www-apple-icon-app-apple-373867276.jpg" alt="Apple">
+  
+</md-card>
+
+
+<md-card class="dashboard-card">
+<md-card-title>Bread </md-card-title>
+<md-card-subtitle>Price : 40 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://image.shutterstock.com/z/stock-vector-toast-icon-sliced-bread-sign-bakery-symbol-round-orange-web-button-with-shadow-358468829.jpg" alt="Bread">
+  
+
+</md-card>
+
+<md-card class="dashboard-card">
+<md-card-title>Apple </md-card-title>
+<md-card-subtitle>Price : 200 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://image.shutterstock.com/z/stock-vector-apple-icon-apple-icon-art-apple-icon-web-apple-icon-new-apple-icon-www-apple-icon-app-apple-373867276.jpg" alt="Apple">
+  
+</md-card>
+
+
+<md-card class="dashboard-card">
+<md-card-title>Rice </md-card-title>
+<md-card-subtitle>Price : 80 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://images.stockunlimited.net/preview1300/sack-of-rice-icon_1317613.jpg" alt="Rice">
+
+</md-card>
+
+  
+
+
+<md-card class="dashboard-card">
+<md-card-title>Floor </md-card-title>
+<md-card-subtitle>Price : 20 Rs/Kg</md-card-subtitle>
+<img md-card-avatar md-list-avatar src="http://previews.123rf.com/images/dxinerz/dxinerz1601/dxinerz160101989/51010315-Flour-white-wheat-icon-vector-image-Can-also-be-used-for-food-iconset-Suitable-for-use-on-web-apps-m-Stock-Vector.jpg" alt="Rice">
+  
 </md-card>
 
 </div>
 
 
 
-<!-- List items -->
+<!-- List items and buttons-->
 <div class="col-3 right">
   <div class="aside">
-    <h2>What?</h2>
-    <p>Chania is a city on the island of Crete.</p>
-    <h2>Where?</h2>
-    <p>Crete is a Greek island in the Mediterranean Sea.</p>
-    <h2>How?</h2>
-    <p>You can reach Chania airport from all over Europe.</p>
-  </div>
+
+
+<!--Button -->
+        
+            <div class="btn-group">
+  <button md-button >Button1</button>
+  <button md-button>Button2</button>
+  
+  
 </div>
+            <hr>
+            
+       
+        
+
+
+
+
+    <md-list>
+  <h3 md-subheader>List-1</h3>
+  <md-list-item >
+    <!--<md-icon md-list-avatar>folder</md-icon>-->
+    <img md-list-avatar src="http://images.stockunlimited.net/preview1300/sack-of-rice-icon_1317613.jpg" alt="Rice">
+    <h4 md-line>Rice</h4>
+<br>
+    <p md-line> 80 Rs/Kg </p>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item >
+   <!-- <md-icon md-list-avatar>folder</md-icon> -->
+    <img md-list-avatar src="http://previews.123rf.com/images/dxinerz/dxinerz1601/dxinerz160101989/51010315-Flour-white-wheat-icon-vector-image-Can-also-be-used-for-food-iconset-Suitable-for-use-on-web-apps-m-Stock-Vector.jpg" alt="Floor">
+    
+    <h4 md-line>Floor</h4>
+    <p md-line> 20 Rs/Kg </p>
+  </md-list-item>
+
+  <md-list-item >
+    <!--<md-icon md-list-avatar>folder</md-icon>-->
+    <img md-list-avatar src="http://image.shutterstock.com/z/stock-vector-apple-icon-apple-icon-art-apple-icon-web-apple-icon-new-apple-icon-www-apple-icon-app-apple-373867276.jpg" alt="Apple">
+    <h4 md-line>Apple</h4>
+<br>
+    <p md-line> 200 Rs/Kg </p>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item >
+   <!-- <md-icon md-list-avatar>folder</md-icon> -->
+    <img md-list-avatar src="http://image.shutterstock.com/z/stock-vector-toast-icon-sliced-bread-sign-bakery-symbol-round-orange-web-button-with-shadow-358468829.jpg" alt="Bread">
+    
+    <h4 md-line>Bread</h4>
+    <p md-line> 40 Rs/Kg </p>
+  </md-list-item>
+</md-list>
+
+
+
+
+  </div>
+</div>  <!-- End List and buttons-->
+
+
+
+
 
 </div>
 
